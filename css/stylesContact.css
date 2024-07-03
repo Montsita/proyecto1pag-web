@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+    --Primary: #072ac8;
+    --PrimaryLight: #a2d6f9;
+    --PrimaryLighter: #d1edff;
+    --SecondaryLight: #fce300;
+    --SecondaryDark: #ffc600;
+    --NeutralLight: #f4f6fc;
+    --NeutralMedium: #6b708d;
+    --NeutralDark: #292e47;
+    --Wrong: #b33a3a;
+    --Right: #28a428;
+    --White: #fff;
+    --Black: #000;
+    --Background: #f2f4fc;
+}
+
+html, body, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* max-width: 1200px;  */
+}
+
+body {
+    background: var(--Background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*** header **/
+
+header{
+    width: 1200px;
+    margin: 20px auto; 
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    width: 1000px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.logo{
+    padding: 8px;
+}
+
+.navbar ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+	line-height: 70px;
+    padding: 0 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: grey;
+}
+
+.navbar ul li a:hover{
+    color: var(--Primary); 
+}
+
+.btnContact{
+    padding: 15px;
+    background: var(--Primary);
+    text-decoration: none;
+    color: var(--White); 
+    font-size: 18px;
+}
+
+.btnContact:hover{
+    color: var(--SecondaryDark);
+}
+
+.burger-menu{
+    display: none;
+}
+
+/***** body *****/
+
+.container-form{
+    width: 1000px;
+    height: 800px;
+}
+
+h1{
+    font-size: 55px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    color: var(--NeutralDark); 
+}
+
+.form-group{
+    width: 1000px;
+    height: 130px;
+}
+
+.form-group label{
+    font-family: "Roboto", sans-serif;
+    margin-top: 10px;
+}
+
+.form-group input{
+    background-color: rgba(107, 112, 141, 0.1);
+    width: 100%;
+    border: none;
+    height: 60px;
+    margin: 10px 0px;
+    padding-left: 10px;
+}
+
+.container-form p{
+    padding: 0px -10px;
+}
+
+.form-group-doble label{
+    font-family: "Roboto", sans-serif;
+    margin-bottom: -20px;
+    margin-top: 10px;
+}
+
+#email {
+    width: 96%;
+}
+
+.form-group-doble input{
+    width: 100%;
+    border: none;
+    height: 60px;
+    margin: 10px 0px;
+    padding-left: 10px;
+    background-color: rgba(107, 112, 141, 0.1);
+}
+
+.container-doble{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-group-doble{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 140px;
+
+}
+
+.form-group-textarea textarea{
+    background-color: rgba(107, 112, 141, 0.1);
+    width: 100%;
+    height: 150px;
+    border: none;
+    margin: 10px 0px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.button button{
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    background-color: var(--Primary);
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    color: var(--SecondaryDark);
+}
+
+.errorForm {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#errorButton {
+    justify-items: center;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/**** footer ***/
+
+footer{
+    margin: 100px 200px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+.adress{
+    width: 200px;
+    height: 180px;
+    /* background-color: #072ac8; */
+}
+
+.adress img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.grid-menu-footer ul{
+    width: 340px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    /* grid-gap: 50px; */
+    column-gap: 10px;  
+    row-gap: 75px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.item-footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+.item-footer a:hover{
+    text-decoration: underline;
+    color: var(--Primary);
+}
+
