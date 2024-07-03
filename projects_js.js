@@ -13,6 +13,12 @@ async function cargarArchivoJSON1(uuid) {
       let imgP = document.getElementById("imageP");
       let paragraph = document.getElementById("paragraphP");
 
+      title.textContent = proyectos[3].name;
+      subtitle.textContent = proyectos[3].description;
+      date.innerHTML = `Completed on <span style="color: gray;">${proyectos[3].completed_on}</span>`;
+      imgP.src = proyectos[3].image;
+      paragraph.innerHTML = proyectos[3].content; 
+
       // switch (uuid) {
       //   case 1:
       //     title = document.getElementById("titleP");
