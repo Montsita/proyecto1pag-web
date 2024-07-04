@@ -33,14 +33,14 @@ body {
 
 
 header{
-    width: 1200px;
+    width: 100vw;
     margin: 20px auto; 
     display: flex;
     justify-content: center;
 }
 
 .navbar{
-    width: 1000px;
+    width: 100vw;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -341,6 +341,7 @@ a h3, a h4{
   }
 
   .profile{
+    margin-top: 30px;
     width: 200px;
     display: flex;
   }
@@ -354,6 +355,22 @@ a h3, a h4{
   .text-testimonial p{
     position: relative;
     
+  }
+
+  .ordenNameOrigin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name{
+    color: var(--PrimaryLight);
+    margin-bottom: -10px;
+    margin-top: 5px;
+  }
+
+  .origin{
+    color: white;
   }
 
 #section-our-service{
@@ -373,6 +390,7 @@ a h3, a h4{
     width: 1000px;
     padding-bottom: 40px;
     font-size: 30px;
+    margin-left: 10px;
 }
 
 .services{
@@ -543,6 +561,206 @@ footer{
         margin: 20px auto;
         display: flex;
         justify-content: center;
+        margin-left: 80px;
+    }
+
+    .hero {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 60px;
+        margin-left: 130px;
+    }
+
+    .article-projects {
+        display: flex;
+        width: 100vw;
+        height: 350vh;
+        justify-content: space-between;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 100px;
+        width: 100vw;
+        margin-bottom: 150px;
+    }
+
+    #section-projects{
+        width: 100vw;
+        height: 500px;
+        margin-bottom: 100px;
+    }
+    
+    #section-projects h2 {
+        width: 100vw;
+        padding-bottom: 40px;
+        font-size: 30px;
+    }
+
+    .article-projects{
+        display: flex;
+        width: 100vw;
+        height: 350px;
+        justify-content: space-between;
+    }
+    
+    #section-projects h2{
+        width: 100vw;
+        padding-bottom: 40px;
+        font-size: 30px;
+    }
+
+    .projects{
+        margin: 0;
+        width: 200px;
+        height: 100%;
+        background-color: white;
+        color: black;
+    }
+  
+    #testimonial-section {
+        background: var(--NeutralDark);
+        background-image: url(../img/orbit.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        width: 100VW;
+        height: 400px;
+        background-size: cover;
+        margin-bottom: 150px;
+      }
+    
+      .text-testimonial{
+        position: absolute;
+        width: 100VW;
+        height: 200px;
+        background: var(--NeutralDark);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 28%;
+      }
+     
+      .text-testimonial h3{
+        color:white;
+        font-size: 15px;
+        font-weight: normal;
+        padding: 0px 200px;
+        text-align: center;
+        color: var(--SecondaryDark);
+      } 
+
+    #section-our-service{
+        width: 1000px;
+        height: 200px;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #article-our-service{
+        display: flex;
+        width: 100vw;
+        height: 350px;
+        justify-content: space-evenly;    
+    }
+    
+    #section-our-service h2{
+        margin-left: 100px;
+        width: 100vw;
+        padding-bottom: 40px;
+        font-size: 30px;
+    }
+    
+    .services{
+        margin: 0;
+        width: 200px;
+        height: 350px;
+        background-color: white;
+    }
+
+    
+    .services h3{
+        margin: 10px 10px 10px 20px;
+        font-size: 20px;
+        
+    }
+    
+    .services h4{
+        font-weight: normal;
+        margin: 20px 10px 55px 20px;
+        color: gray;
+    }
+    
+    .services a{
+        font-weight: bold;
+        margin: 0px 0px 0px 20px;
+        text-decoration: none;
+    }
+        /* TODO */
+    
+}
+      
+
+    
+
+@media (max-width: 820px){
+    header {
+        width: 100vw;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        margin-left: 100px;
+    }
+
+    .hero {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 60px;
+        margin-left: 200px;
+    }
+
+    .accepted {
+        position: relative;
+        width: 230px;
+        height: auto;
+        top: 35px;
+        left: 150px;
+    }
+
+    .card {
+        position: relative;
+        width: 230px;
+        height: auto;
+        top: 30px;
+        left: -60px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+        grid-gap: 100px;
+        width: 500px;
+        margin-bottom: 150px;
+        margin-left: 200px;
+        justify-items: center;
+    }
+
+    .grid-item{
+        filter: grayscale(100%);
+        cursor: pointer;
+        width: 110px;
+        transition: all 0.4s ease-in-out;
     }
 }
 
@@ -552,5 +770,170 @@ footer{
         margin: 20px auto;
         display: flex;
         justify-content: center;
+        margin-left: 100px;
     }
+
+    .hero {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 60px;
+        margin-left: 200px;
+    }
+
+    .accepted {
+        position: relative;
+        width: 180px;
+        height: auto;
+        top: 35px;
+        left: 150px;
+    }
+
+    .card {
+        position: relative;
+        width: 180px;
+        height: auto;
+        top: 30px;
+        left: -60px;
+    }
+
+    #testimonial-section {
+        background: var(--NeutralDark);
+        background-image: url(../img/orbit.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        width: 100VW;
+        height: 400px;
+        background-size: cover;
+        margin-bottom: 150px;
+      }
+    
+      .text-testimonial{
+        position: absolute;
+        width: 100VW;
+        height: 150px;
+        background: var(--NeutralDark);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 28%;
+        text-align: center;
+      }
+      
+      .text-testimonial h2{
+        color:white;
+        font-size: 25px;
+        padding:20px 0px;
+      } 
+     
+      .text-testimonial h3{
+        color:white;
+        font-size: 12px;
+        font-weight: normal;
+        padding: 0px 100px;
+        text-align: center;
+        color: var(--SecondaryDark);
+      } 
+    
+      .icono1{
+        top: 3%;
+        left: 5%;
+      }
+    
+      .icono2{
+        top: 3%;
+        left: 85%;
+      }
+    
+      .icono3{
+        top: 80%;
+        left: 5%;
+      }
+    
+      .icono4{
+        top: 80%;
+        left: 85%;
+      }
+    
+    
+      .name{
+        color: var(--PrimaryLight);
+        margin-bottom: -10px;
+        margin-top: 5px;
+        font-size: 12px;
+      }
+    
+      .origin{
+        color: white;
+        font-size: 12px;
+
+      }
+      /* TODO */
+      #article-our-service{
+        display: flex;
+        width: 1000px;
+        height: 350px;
+        justify-content: space-between;
+    }
+    
+    #section-our-service h2{
+        width: 1000px;
+        padding-bottom: 40px;
+        font-size: 30px;
+    }
+    
+    .services{
+        margin: 0;
+        width: 280px;
+        height: 300px;
+        background-color: white;
+    }
+    
+    .services:hover{
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .services img{
+        position: relative;
+        height: 35px;
+        width: 35px;
+    }
+    
+    .background-img{
+        margin: 30px 20px 20px 20px;
+        width: 50px;
+        height: 50px;
+        background: var(--PrimaryLighter);
+        padding: 10px;
+        border-radius: 60%;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    .services h3{
+        margin: 10px 10px 10px 20px;
+        font-size: 20px;
+        
+    }
+    
+    .services h4{
+        font-weight: normal;
+        margin: 20px 10px 55px 20px;
+        color: gray;
+    }
+    
+    .services a{
+        font-weight: bold;
+        margin: 0px 30px 0px 20px;
+        text-decoration: none;
+    }
+    
+    .services a:hover{
+        text-decoration: underline;
+    } 
 }
