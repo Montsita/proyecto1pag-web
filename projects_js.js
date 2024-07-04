@@ -94,29 +94,29 @@ async function cargarArchivoJSON1(uuid) {
       console.error("Error:", error);
     }
 }
-cargarArchivoJSON1(2);
+// cargarArchivoJSON1(2);
 
-const project1 = document.querySelector('.Projecta1');
-const project2 = document.querySelector('.Projecta2');
-const project3 = document.querySelector('.Projecta3');
+// const project1 = document.querySelector('.Projecta1');
+// const project2 = document.querySelector('.Projecta2');
+// const project3 = document.querySelector('.Projecta3');
 
-project1.addEventListener('click', function(event) {
-    event.preventDefault(); 
-    const uuid = "1";
-    cargarArchivoJSON1(uuid);
-});
+// project1.addEventListener('click', function(event) {
+//     event.preventDefault(); 
+//     const uuid = "1";
+//     cargarArchivoJSON1(uuid);
+// });
 
-project2.addEventListener('click', function(event) {
-    event.preventDefault(); 
-    const uuid = "2";
-    cargarArchivoJSON1(uuid);
-});
+// project2.addEventListener('click', function(event) {
+//     event.preventDefault(); 
+//     const uuid = "2";
+//     cargarArchivoJSON1(uuid);
+// });
 
-project3.addEventListener('click', function(event) {
-    event.preventDefault(); 
-    const uuid = "3";
-    cargarArchivoJSON1(uuid);
-});
+// project3.addEventListener('click', function(event) {
+//     event.preventDefault(); 
+//     const uuid = "3";
+//     cargarArchivoJSON1(uuid);
+// });
 
 // 0 Descargarte los datos de la API
 // 1º Acceder al número de la id de la url. ?id=2 -> Quiero extraer el número 2. (Buscar como extraer info de una url)
