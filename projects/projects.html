@@ -9,8 +9,8 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="/index.html">
-            <img a class= "logo" src="img/circle.svg" alt="Logo Circle">
+            <a href="../index.html">
+            <img a class= "logo" src="../img/circle.svg" alt="Logo Circle">
             </a>  
             <ul class="main-nav-desktop">
                 <li><a href="#Home">Home</a></li>
@@ -18,9 +18,9 @@
                 <li><a href="#Services">Services</a></li>
             </ul>
             <div class="btnMenu">
-                <a class="btnContact" id="menuBtn" href="/contact.html">Contact Us</a>
+                <a class="btnContact" id="menuBtn" href="../contact.html">Contact Us</a>
             </div>
-            <div class="burger-menu">
+            <div class="burger-menu" id="burger-menu">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
@@ -41,30 +41,30 @@
     <section id="section-projects">
         <h2>Recent Projects</h2>
         <article class="article-projects">
-        <a href="./projects/projects.html">
+        <a id="link1" href="./projects/projects.html?id=1">
             <div class="projects">  
-                <img src="/img/2.jpg" alt="project-image2">
-                <h3>Simplify</h3>
-                <h4>UI Design & App Development</h4>
-                <a class= "project-learn" href="./projects/projects.html">Learn more</a>
+                <img id="img1" src="/img/2.jpg" alt="project-image2">
+                <h3 id="title1">Simplify</h3>
+                <h4 id="subTitle1">UI Design & App Development</h4>
+                <a id="secondUrl1" class= "project-learn" href="./projects/projects.html?id=1">Learn more</a>
             </div>
         </a>
     
-        <a href="./projects/projects.html">
+        <a id="link2" href="./projects/projects.html?id=2">
             <div class="projects">
-                <img src="/img/3.jpg" alt="project-image3">
-                <h3>Dashcoin</h3>
-                <h4>Web Development</h4>
-                <a class= "project-learn" href="./projects/projects.html">Learn more</a>
+                <img id="img2" src="/img/3.jpg" alt="project-image3">
+                <h3 id="title2" >Dashcoin</h3>
+                <h4 id="subTitle2">Web Development</h4>
+                <a id="secondUrl2" class= "project-learn" href="./projects/projects.html?id=2">Learn more</a>
             </div>
         </a>
         
-        <a href="./projects/projects.html">
+        <a id="link3" href="./projects/projects.html?id=3">
             <div class="projects">
-                <img src="/img/4.jpg" alt="project-image4">
-                <h3>Vectorify</h3>
-                <h4>User Experience Design</h4>
-                <a class= "project-learn" href="./projects/projects.html">Learn more</a>
+                <img id="img3" src="/img/4.jpg" alt="project-image4">
+                <h3 id="title3">Vectorify</h3>
+                <h4 id="subTitle3">User Experience Design</h4>
+                <a id="secondUrl3" class= "project-learn" href="./projects/projects.html?id=3">Learn more</a>
             </div>
         </a>
         </article>
@@ -89,5 +89,7 @@
         </div>
     </footer>
 <script src="../projects_js.js"></script>
+<script src="../hamburger_js.js"></script>
+<script src="../hamburger_js.js"></script>
 </body>
 </html>
