@@ -34,10 +34,11 @@ body {
 /*** header **/
 
 header{
-    width: 800px;
+    width: 100vw;
     margin: 20px auto; 
     display: flex;
     justify-content: center;
+    justify-content: space-around;
 }
 
 .navbar{
@@ -46,35 +47,34 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    justify-content: space-evenly;
 }
 
 .logo{
     padding: 8px;
 }
 
-.navbar ul{
+.main-nav-desktop{
     width: 400px;
     display: flex;
     justify-content: space-around;
 }
 
-.navbar ul li {
+.main-nav-desktop li {
     list-style-type: none;
     display: inline-block;
 	line-height: 70px;
     padding: 0 10px;
 }
 
-.navbar ul li a{
+.main-nav-desktop li a{
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     color: grey;
 }
 
-.navbar ul li a:hover{
+.main-nav-desktop li a:hover{
     color: var(--Primary); 
 }
 
@@ -92,6 +92,13 @@ header{
 
 .burger-menu{
     display: none;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px;
 }
 
 /***** body *****/
@@ -293,7 +300,6 @@ footer{
         font-weight: bold; 
         color: white; 
         background-color: rgb(95, 124, 141);
-        /* padding: 0px 30px; */
         width: 120px;
         height: auto;
         text-align: center;
