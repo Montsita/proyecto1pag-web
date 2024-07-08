@@ -444,8 +444,10 @@ a h3, a h4{
 
 .services a{
     font-weight: bold;
-    margin: 0px 30px 0px 20px;
+    margin: 0px 10px 10px 0px;
     text-decoration: none;
+    color: var(--Primary);
+    padding-left: 20px;
 }
 
 .services a:hover{
@@ -1024,7 +1026,104 @@ footer{
         text-align: center;
     }
 
-    @media (max-width: 360px){
-        /* TODO */
-    }
+@media (max-width: 375px){
+
+.heroContent {
+    text-align: left;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
 }
+
+.hero {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.card {
+    position: relative;
+    width: 100px;
+    height: auto;
+    top: 30px;
+    left: -45px;
+}
+
+.accepted {
+    position: relative;
+    width: 100px;
+    height: auto;
+    top: 35px;
+    left: 60px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(1, 5fr);
+    grid-gap: 100px;
+    width: 1000px;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+
+#testimonial-section {
+    margin-top: -200px;
+    margin-bottom: 200px;
+
+}
+
+#testimonial-section img {
+    position: absolute;
+    width: 50px;
+}
+
+.icono1 {
+    top: 3%;
+    left: 0%;
+}
+
+.icono3 {
+    top: 80%;
+    left: 0%;
+}
+
+.profileP{
+    width: 40%;
+    margin-left: 30px;
+}
+
+.ordenNameOrigin{
+    width: 40%;
+    margin-left: 10px;
+}
+
+.box-input-help {
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-help1 {
+    width: 200px;
+}
+
+footer{
+    margin-top: -80px;
+}
+
+.grid-menu-footer ul{
+    width: 100vw;
+}
+
+
+}
+
+}
+
